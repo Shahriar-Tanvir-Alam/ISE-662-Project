@@ -1,0 +1,65 @@
+/*********************************************
+ * OPL 12.6.1.0 Data
+ * Author: Shahriar Tanvir Alam
+ * Creation Date: Apr 1, 2024 at 12:19:34 AM
+ *********************************************/
+demand_deamand_center= [[200000, 150000, 110000], [120000, 170000, 115000]];
+
+demand_fulfillment_percentage = [.8, .8];
+// Demand of products at customer centers
+demand_customer_center = 
+[[20000, 25000, 30000],  // Product A
+ [15000, 20000, 25000]]; // Product B
+
+// Capacities of supply centers
+capacity_supply_center = [100000, 200000];
+
+// Capacities of manufacturing centers
+capacity_manufacturing_center = [1500000];
+
+// Capacities of additional manufacturing centers
+capacity_additional_manufacturing_center=[750000];
+
+// Capacities of demand centers
+capacity_demand_center = [2000000, 1500000, 1700000];
+
+// Capacities of retail centers
+capacity_retail_center = [12000000, 10000000];
+
+// Costs of transporting products from supply centers to manufacturing centers
+cost_supply_to_manufacturing = 
+[[[5], [6]],  // Product A
+ [[7], [8]]]; // Product B
+
+// Costs of transporting products from supply centers to additional manufacturing centers
+cost_supply_to_additional_manufacturing=
+[[[5], [6]],  // Product A
+ [[7], [5]]]; // Product B
+
+
+// Costs of transporting products from manufacturing centers to demand centers
+cost_manufacturing_to_demand = 
+[[[8, 9, 10]],  // Product A
+ [[10, 10, 11]]]; // Product B
+ 
+// Costs of transporting products from additional manufacturing centers to demand centers
+cost_additional_manufacturing_to_demand=
+[[[5, 4, 6]],  // Product A
+ [[6, 7, 6]]]; // Product B
+ 
+// Costs of transporting products from demand centers to retail centers
+cost_demand_to_retail = 
+[[[3, 4], [5, 4], [3, 4]],  // Product A
+ [[4, 5], [4, 3], [3, 4]]]; // Product B
+
+
+// Costs of transporting products from retail centers to customer centers
+cost_retail_to_customer = 
+[
+    [[2, 3, 4], [4, 5, 1]],  // Product A
+    [[3, 4, 3], [4, 3, 2]]   // Product B
+];
+
+cost_subcontract= [500000];
+
+ 
