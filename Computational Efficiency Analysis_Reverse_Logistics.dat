@@ -1,0 +1,50 @@
+/*********************************************
+ * OPL 12.6.1.0 Data
+ * Author: Shahriar Tanvir Alam
+ * Creation Date: Mar 31, 2024 at 1:07:50 AM
+ *********************************************/
+ 
+Ndemand_center = 3;
+Nretailer_areas = 2;
+Ncustomer_areas = 3;
+Nremanufacturing_centers = 1;
+Ninventories = 1;
+Ndisposal_centers = 1;
+products = {"A", "B"};
+
+// Parameters
+demand_demand_Center = [[4000, 3400, 2800], [2400, 3400, 2600]];
+demand_remanufacturing_centers=[[20000],[17000]];
+
+
+return_rate_customer = [[.6], [.6]];
+
+return_rate_remanufacturing = [[.7],[.7]];
+
+//return_rate_inventory = [[.7, .8, .9], [.5, .6, .9]];
+fixed_cost_remanufacturing = [200000];
+fixed_cost_inventory = [7500];
+fixed_cost_disposal = [20000];
+
+
+cost_transport_retailer = [[[7],[8]], [[7],[8]]];
+cost_transport_customer = [[[6],[4],[5]], [[6],[4],[5]]];
+cost_transport_remanufacturing = [[[11]],[[12]]];
+cost_transport_inventory = [[[4]],[[3]]];
+cost_transport_demand = [[[16, 21, 19]], [[15, 20, 18]]];
+distance_retailer = [[[2.3],[2.2]], [[2.3],[2.2]]];
+distance_customer = [[[1.3], [1.4], [1.2]],[[1.3], [1.4], [1.2]]];
+distance_remanufacturing = [[[1.8]],[[1.8]]];
+distance_inventory = [[[1.6]],[[1.6]]];
+distance_demand = [[[3.4,3.1,2.9]],[[3.4,3.1,2.9]]];
+cost_stocking = [[6], [7]];
+
+
+capacity_remanufacturing = [50000];
+capacity_inventory =[45000];
+capacity_disposal=[30000];
+
+
+
+    
+ 
